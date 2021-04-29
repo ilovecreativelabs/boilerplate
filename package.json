@@ -15,19 +15,25 @@
     ]
   },
   "dependencies": {
+    "formik": "^2.2.6",
     "next": "10.1.2",
     "next-pwa": "^5.0.6",
+    "ramda": "^0.27.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "uuid": "^8.3.2",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@babel/core": "^7.13.14",
-    "@types/node": "^14.14.37",
     "@babel/preset-typescript": "^7.13.0",
+    "@types/node": "^14.14.37",
     "@types/react": "^17.0.3",
     "@types/styled-components": "^5.1.9",
+    "@types/uuid": "^8.3.0",
+    "@types/yup": "^0.29.11",
     "@typescript-eslint/eslint-plugin": "^4.20.0",
     "@typescript-eslint/parser": "^4.20.0",
     "babel-loader": "^8.2.2",
