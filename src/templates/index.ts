@@ -1,0 +1,6 @@
+export { default as AboutUs } from './AboutUs'
+export { default as Base } from './Base'
+export { default as Blog } from './Blog'
+export { default as Blogs } from './Blogs'
+export { default as Contacts } from './Contacts'
+export { default as Home } from './Home'
