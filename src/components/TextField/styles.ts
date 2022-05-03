@@ -9,9 +9,9 @@ type WrapperProps = Pick<TextFieldProps, 'disabled'> & { error?: boolean }
 export const InputWrapper = styled.div`
   ${({ theme }) => css`
     align-items: center;
-    background: #f8f8f8;
+    background: ${theme.colors.white};
     border: 0.2rem solid;
-    border-color: #f8f8f8;
+    border-color: ${theme.colors.white};
     border-radius: 0.2rem;
     display: flex;
     padding: 0 ${theme.spacings.xsmall};
