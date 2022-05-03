@@ -60,13 +60,6 @@ const GlobalStyles: GlobalStyleComponent<
         background-color: ${theme.colors.mainBg};
       `}
     }
-
-    a {
-      ${({ theme }) => css`
-        text-decoration: none;
-        color: ${theme.colors.primary};
-      `}
-    }
   `}
 `
 

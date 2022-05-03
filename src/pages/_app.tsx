@@ -9,15 +9,20 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>Boilerplate</title>
-        <link rel="shortcut icon" href="/img/icon-512.png" />
-        <link rel="apple-touch-icon" href="/img/icon-512.png" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#161616" />
+        <link rel="shortcut icon" href="/icons/favicon-16.png" />
+        <link rel="shortcut icon" href="/icons/favicon-32.png" />
+        <link rel="shortcut icon" href="/icons/favicon-96.png" />
+        <link rel="shortcut icon" href="/icons/icon-57.png" />
+        <link rel="shortcut icon" href="/icons/icon-120.png" />
+        <link rel="shortcut icon" href="/icons/icon-144.png" />
+        <link rel="shortcut icon" href="/icons/icon-152.png" />
+        <link rel="apple-touch-icon" href="/icons/icon-180.png" />
+        <meta name="theme-color" content="#FF2156" />
         <meta
           name="description"
-          content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
+          content="Conectamos pessoas doadoras de sangue com pessoas que desejam receber as doações."
         />
+        <title>I Love donate</title>
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
