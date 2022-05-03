@@ -4,7 +4,10 @@ import { ButtonProps } from '.'
 
 export type ButtonStyledProps = {
   hasIcon: boolean
-} & Pick<ButtonProps, 'size' | 'fullWidth' | 'minimal' | 'backgroundColor'>
+} & Pick<
+  ButtonProps,
+  'size' | 'fullWidth' | 'minimal' | 'backgroundColor' | 'color'
+>
 
 const wrapperModifiers = {
   small: (theme: DefaultTheme) => css`
@@ -32,7 +35,7 @@ const wrapperModifiers = {
     }
   `,
   large: (theme: DefaultTheme) => css`
-    height: 5rem;
+    height: 6rem;
     font-size: ${theme.font.sizes.medium};
     padding: ${theme.spacings.xxsmall} ${theme.spacings.xlarge};
   `,
@@ -54,6 +57,9 @@ const wrapperModifiers = {
   `,
   red: (theme: DefaultTheme) => css`
     background-color: ${theme.colors.primary};
+  `,
+  secondary: (theme: DefaultTheme) => css`
+    background-color: ${theme.colors.secondary};
   `
 }
 
@@ -65,12 +71,13 @@ export const Wrapper = styled.button<ButtonStyledProps>`
     hasIcon,
     minimal,
     disabled,
-    backgroundColor
+    backgroundColor,
+    color
   }) => css`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: ${theme.colors.white};
+    color: ${theme.colors[color!]};
     font-family: ${theme.font.family};
     border: 0;
     cursor: pointer;

@@ -15,7 +15,8 @@ export type ButtonProps = {
   icon?: JSX.Element
   minimal?: boolean
   size?: 'small' | 'medium' | 'large'
-  backgroundColor?: 'red' | 'white'
+  backgroundColor?: 'red' | 'white' | 'secondary'
+  color?: 'white' | 'dark'
 } & ButtonTypes
 
 const Button: React.ForwardRefRenderFunction<S.ButtonStyledProps, ButtonProps> =
@@ -26,6 +27,7 @@ const Button: React.ForwardRefRenderFunction<S.ButtonStyledProps, ButtonProps> =
       icon,
       minimal = false,
       size = 'medium',
+      color = 'dark',
       backgroundColor = 'white',
       ...props
     },
@@ -37,6 +39,7 @@ const Button: React.ForwardRefRenderFunction<S.ButtonStyledProps, ButtonProps> =
       minimal={minimal}
       fullWidth={fullWidth}
       hasIcon={!!icon}
+      color={color}
       ref={ref}
       {...props}
     >
